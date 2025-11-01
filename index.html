@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="lista">
+    
+    <div class="screen">
+      <h2 id="pokemonName">Pokedex</h2>
+      <img id="pokemonImg" class="pokemon-img" src="" alt="Pokemon">
+
+      <p><strong>ID:</strong> <span id="pokeId"></span></p>
+      <p><strong>Tipo:</strong> <span id="pokeType"></span></p>
+      <p><strong>Altura:</strong> <span id="pokeHeight"></span></p>
+      <p><strong>Peso:</strong> <span id="pokeWeight"></span></p>
+      <p><strong>Habilidades:</strong> <span id="pokeAbilities"></span></p>
+      
+      <p id="error" class="error"></p>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="pokemonInput" placeholder="Ej: pikachu">
+      <button onclick="buscarPokemon()">Buscar</button>
+      <button onclick="pokemonRandom()">Random</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
